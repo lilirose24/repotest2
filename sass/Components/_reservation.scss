@@ -1,0 +1,9 @@
+.reservation {
+    background-color: rgba($color-quaternary, .4);
+    text-align: center;
+    padding: 3rem;
+
+    &__second-title {
+        margin-top: 0;
+    }
+}

@@ -1,0 +1,11 @@
+{
+  "name": "p3",
+  "version": "1.0.0",
+  "description": "projet animation sass",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./css/style.css"
+  },
+  "author": "meriam benammar",
+  "license": "ISC"
+}

@@ -1,0 +1,15 @@
+.location {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: $color-quaternary;
+
+    .fas {
+        padding-right: 10px;
+    }
+
+    &__actuel-location {
+        font-weight: 500;
+    }
+}

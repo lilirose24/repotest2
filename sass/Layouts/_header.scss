@@ -1,0 +1,34 @@
+.header {
+    margin-top: 30px;
+    margin-bottom: 10px;
+
+    &__logo {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        height: 40px;
+        width: 200px;
+    }
+
+    &__image {
+        width: 100%;
+        margin-top: 1rem;
+        object-fit: cover;
+        @include tablet {
+            height: 350px;
+        }
+    }
+
+    &__link-back {
+        display: block;
+        position: absolute;
+        padding: 0.5rem;
+        left: 1rem;
+        color: black;
+        cursor: pointer;
+    }
+
+    &__icon-back {
+        font-size: 1.5rem;
+    }
+}

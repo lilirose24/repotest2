@@ -1,0 +1,64 @@
+.loader {
+    text-align: center;
+    line-height: 500px;
+    font-size: 2rem;
+    color: rgba($color-primary, .5);
+    background: $color-quaternary;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    animation: 0.5s ease-in-out 1.5s forwards disappear;
+
+    &__span {
+        width: 50px;
+        height: 50px;
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    &__animation {
+        position: relative;
+        border-radius: 50px;
+        border: 5px solid rgba($color-primary, .5);
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: -5px;
+            left: -5px;
+            bottom: -5px;
+            right: -5px;
+            width: 50px;
+            height: 50px;
+            border-radius: 50px;
+            border: 5px solid transparent;
+            border-top-color: #fff;
+            animation: spin 3s linear infinite;
+        }
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes disappear {
+    from {
+        opacity: 1;
+        visibility: visible;
+        height: 100vh;
+    }
+
+    to {
+        opacity: 0;
+        display: none;
+        visibility: hidden;
+        height: 0;
+    }
+}

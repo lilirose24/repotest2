@@ -1,0 +1,96 @@
+.restaurant {
+    background-color: rgba($color-quaternary, .4);
+    position: relative;
+
+    &__third-title {
+        padding: 3rem 1.5rem 1rem;
+        margin: 0;
+
+        @include tablet {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+    }
+
+    &__menu {
+        padding-bottom: 4rem;
+
+        @include tablet {
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    &__cards {
+        margin: 0 1rem 1rem 1rem;
+        padding-bottom: 0.1rem;
+        border-radius: 2rem;
+        box-shadow: 0 5px 10px 2px #e6e6e6;
+        background-color: #fff;
+        position: relative;
+    }
+
+    &__nouveau {
+        &::after {
+            content: "Nouveau";
+            position: absolute;
+            top: 5vw;
+            right: 5vw;
+            background: #99E2D0;
+            color: #278870;
+            font-size: 0.9rem;
+            padding: 0.4rem 0.6rem;
+            font-weight: 600;
+            border-radius: 0.2rem;
+
+            @include tablet {
+                top: 2vw;
+                right: 2vw;
+            }
+
+        }
+    }
+
+    &__picture {
+        width: 100%;
+        border-radius: 2rem 2rem 0 0;
+    }
+
+    &__link {
+        text-decoration: none;
+        color: black;
+    }
+
+    &__info {
+        margin-left: 1rem;
+    }
+
+    &__icon-heart {
+        font-size: 1.5rem;
+        position: absolute;
+        right: 4vw;
+        top: 66vw;
+        color: #fff;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: black;
+        transition: color 2s;
+
+        &:hover {
+            color: $color-primary;
+        }
+
+        @include tablet{
+            right: 2vw;
+            top: 17vw;
+        }
+    }
+
+    &__fourth-title {
+        margin: 0.5rem 0;
+    }
+
+    &__paragraph {
+        margin-top: 0;
+        margin-bottom: 1rem;
+    }
+}

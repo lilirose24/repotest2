@@ -1,0 +1,38 @@
+.footer {
+    background: #353535;
+    color: #FFF;
+    padding: 1rem 1.5rem;
+
+    &__fifth-title {
+        font-family: $secodanry_font_family;
+        font-size: 1rem;
+        font-weight: 500;
+        margin: 1rem 0;
+    }
+
+    &__unorder-list {
+        padding-inline-start: 0px;
+    }
+
+    &__list {
+        margin-bottom: 0.5rem;
+        list-style-type: none;
+    }
+
+    &__icon {
+        margin-right: 1rem;
+        width: 16px;
+        @include tablet {
+            margin-right: 1.5rem;
+        }
+    }
+
+    &__link {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    @include tablet {
+        text-align: center;
+    }
+}

@@ -1,0 +1,12 @@
+body {
+    font-family: $primary_font_family;
+    font-size: $size;
+    margin: 0;
+
+    @include tablet {
+        font-size: 1.5vw;
+    }
+}
+*, ::after , ::before{
+    box-sizing:border-box;
+}
